@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f0f0;
+    background-image: url("image.jpg");
+    background-size: cover;
+    
+    
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell button {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #ebe7e2;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.cell button:hover:not(:disabled) {
+    background-color: #7575ff;
+}
+
+button[disabled] {
+    background-color: #ebf3ed;
+    cursor: not-allowed;
+}
+
+button[name="reset"] {
+    background-color: rgb(68, 240, 68);
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    display: inline-block;   /* shrink to fit content */
+    padding: 8px 16px;       /* space around text */
+    border-radius: 8px;      /* rounded corners */
+    margin: 10px auto;       /* spacing between them */
+}
+h1 {
+    color: #f8f3f3;
+    background-color: #7575ff;
+}
+
+h2 {
+    color:#f8f3f3;
+    background-color: #7575ff;
+}
+
+h3 {
+    color:#f8f3f3;
+    background-color: #7575ff;
+}
